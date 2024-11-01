@@ -52,6 +52,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .form form .input input{
@@ -115,4 +116,13 @@ form .name-details .field:last-child{
 .form form .button input:active{
     transform: scale(0.98); 
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    color: lightgray;
+    top: 70%;
+   transform: translateY(-50%);
+   cursor: pointer; 
 }
