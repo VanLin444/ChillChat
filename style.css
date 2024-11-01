@@ -126,3 +126,129 @@ form .name-details .field:last-child{
    transform: translateY(-50%);
    cursor: pointer; 
 }
+
+/*Код для формы пользователей*/
+
+.users{
+    padding: 25px 30px;
+}
+
+.users header, .users-list a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.users header .content, .users-list a .content{
+    display: flex;
+    align-items: center;
+}
+
+.users header .details, .users-list .details{
+    margin-left: 15px;
+    color: black;
+}
+
+.users header .details span, .users-list .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.users header .logout{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-weight: 400;
+    color:white;
+    background:rgb(61, 61, 61);
+    text-decoration:none;
+}
+
+.users .search{
+    margin: 20px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.users .search .text{
+    font-size: 18px;
+}
+
+.users .search input{
+    position: absolute;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    padding: 0 13px;
+    border: 1px solid rgb(226, 226, 226);
+    height: 42px;
+    width: calc(100% - 50px);
+}
+
+.users .search button{
+    height: 42px;
+    width: 47px;
+    border-radius: 0 5px 5px 0;
+    background: rgb(61, 61, 61);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+}
+
+.users header a:active{
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+}
+
+.users-list a{
+    padding-right: 15px;
+    text-decoration: none;
+    padding-right: 15px;
+    border-bottom-color: rgb(240, 236, 236);
+    margin: 20px 0 0 0;
+}
+
+
+.users-list a .status-dot{
+    font-size: 12px;
+    color: green;
+}
+
+.users-list{
+    max-height: 325px;
+    overflow: auto;
+}
+
+.users-list::-webkit-scrollbar{
+    width: 0px;
+}
+
+.users-list a .content p{
+    color:rgb(170, 170, 170);
+}
+
+/*Далее будем использовать этот класс в PHP, чтобы показать оффлайн статус*/
+.users-list a .status-dot.offline{
+    color: lightgray;
+}

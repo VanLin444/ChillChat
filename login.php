@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="form signup">
+        <section class="form login">
             <header>ChillChat</header>
             <form action="#">
                 <div class="error-txt">Здесь выводится сообщение об ошибке</div>
