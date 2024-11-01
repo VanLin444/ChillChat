@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppis', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(245, 245, 245);
+}
+
+.wrapper{
+    background:white;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+/*Код для формы регистрации*/
+
+.form{
+    padding: 25px 30px;
+}
+
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+.form form{
+    margin: 20px 0;
+}
+
+.form form .error-txt{
+    color:rgb(194, 62, 62);
+    background:rgb(250, 162, 162);
+    border-radius: 5px;
+    border: 1px solid rgb(211, 132, 132);
+    padding: 10px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+    font-size: 15px;
+    outline: none;
+}
+
+.form form .name-details{
+    display:flex;
+}
+
+form .name-details .field:first-child{
+    margin-right: 10px;
+}
+
+form .name-details .field:last-child{
+    margin-left: 10px;
+}
+
+.form form .field label{
+    margin-bottom: 2px;
+}
+
+.form form .image input{
+    font-size: 15px;
+}
+
+.form form .buttom input{
+    height: 45px;
+    margin-top: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+    color:white;
+    background:rgb(61, 61, 61);
+
+}
+
+.form .link{
+    text-align: center;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.form .link a{
+    color:gray;
+    text-decoration:none;
+}
+
+.form .link a:hover{
+    text-decoration: underline;
+}
