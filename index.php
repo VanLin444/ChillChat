@@ -35,7 +35,7 @@
                     <label>Select Image</label>
                     <input type="file">
                 </div>
-                <div class="field buttom">
+                <div class="field button">
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>

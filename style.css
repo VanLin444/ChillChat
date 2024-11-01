@@ -84,7 +84,7 @@ form .name-details .field:last-child{
     font-size: 15px;
 }
 
-.form form .buttom input{
+.form form .button input{
     height: 45px;
     margin-top: 13px;
     border: none;
@@ -110,4 +110,9 @@ form .name-details .field:last-child{
 
 .form .link a:hover{
     text-decoration: underline;
+}
+
+.form form .button input:active{
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
