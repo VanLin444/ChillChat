@@ -21,7 +21,7 @@ body{
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
 }
 
-/*Код для формы регистрации*/
+/*Стили для формы регистрации*/
 
 .form{
     padding: 25px 30px;
@@ -127,7 +127,7 @@ form .name-details .field:last-child{
    cursor: pointer; 
 }
 
-/*Код для формы пользователей*/
+/*Стили для формы пользователей*/
 
 .users{
     padding: 25px 30px;
@@ -251,4 +251,43 @@ form .name-details .field:last-child{
 /*Далее будем использовать этот класс в PHP, чтобы показать оффлайн статус*/
 .users-list a .status-dot.offline{
     color: lightgray;
+}
+
+/*Стили для чата*/
+
+.chat-area{
+    padding: 25px 30px;
+}
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.chat-area header img{
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+}
+
+
+.chat-area header .content{
+    display: flex;
+    align-items: center;
+}
+
+.chat-area header .details span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-area header .details p{
+    color: rgb(121, 121, 121);
+}
+
+.chat-area header .back-icon{
+    font-size: 18px;
+    color: rgb(61, 61, 61);
 }
