@@ -240,7 +240,7 @@ form .name-details .field:last-child{
     overflow: auto;
 }
 
-.users-list::-webkit-scrollbar{
+.chat-box::-webkit-scrollbar,.users-list::-webkit-scrollbar{
     width: 0px;
 }
 
@@ -262,7 +262,6 @@ form .name-details .field:last-child{
 .chat-area header{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid lightgray;
     padding-bottom: 20px;
 }
 
@@ -290,4 +289,98 @@ form .name-details .field:last-child{
 .chat-area header .back-icon{
     font-size: 18px;
     color: rgb(61, 61, 61);
+}
+
+.chat-box{
+    height: 500px;
+    background:  rgb(241, 241, 241);
+    padding: 10px 30px 20px 30px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%), inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+    overflow-y: auto;
+}
+
+.chat-box .outgoing{
+    display: flex;
+}
+
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+}
+
+.outgoing .details p{
+    background: rgb(61, 61, 61);
+    color: white;
+    border-radius: 18px 18px 0 18px;
+}
+
+.incoming .details p{
+    background: rgb(214, 214, 214);
+    color: black;
+    border-radius: 18px 18px 18px 0;
+}
+
+.incoming .details{
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+
+.chat-box .chat p{
+    padding: 8px 16px;
+    box-shadow: inset 0 0 32px rgb(0 0 0 / 8%), inset 0 16px 16px -16px rgb(0 0 0 / 10%);
+    word-wrap: break-word;
+}
+
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+
+.chat img{
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.chat-box .chat{ 
+    margin: 15px 0;
+}
+
+.chat-area .typing-area{
+    display:flex;
+    justify-content: space-between;
+    padding: 18px 15px;
+}
+
+.chat-area form{
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.typing-area input{
+    outline: none;
+    height: 45px;
+    width: calc(100% - 58px);
+    border-radius: 5px 0 0 5px;
+    padding: 0 13px;
+    border: 1px solid rgb(223, 221, 221);
+    font-size: 17px;
+}
+
+.typing-area button{
+    width: 55px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background: rgb(61, 61, 61);
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.typing-area button:active{
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }

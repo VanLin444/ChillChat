@@ -18,6 +18,56 @@
                     <p>Active</p>
                 </div>
             </header>
+            <div class="chat-box">
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="./img/sova.jpg" alt="">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="./img/sova.jpg" alt="">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="./img/sova.jpg" alt="">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="./img/sova.jpg" alt="">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="typing-area">
+                <input type="text" placeholder="Write a message...">
+                <button><i class="fab fa-telegram-plane"></i></button>
+            </form>
         </section>
     </div>
 </body>
