@@ -2,7 +2,7 @@
     $dbHost = 'localhost';
     $dbUsername = 'root';
     $dbPassword = 'root';
-    $dbName = 'chill-chat';
+    $dbName = 'chill_chat';
     $dbPort = '3306';
 
     $conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName, $dbPort);
