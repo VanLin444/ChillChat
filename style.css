@@ -46,6 +46,7 @@ body{
     padding: 10px 10px;
     text-align: center;
     margin-bottom: 10px;
+    display: none;
 }
 
 .form form .field{
@@ -203,22 +204,36 @@ form .name-details .field:last-child{
     border: 1px solid rgb(226, 226, 226);
     height: 42px;
     width: calc(100% - 50px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .users .search button{
     height: 42px;
     width: 47px;
     border-radius: 0 5px 5px 0;
-    background: rgb(61, 61, 61);
-    color: white;
+    background: white;
+    color: rgb(61, 61, 61);
     cursor: pointer;
     outline: none;
     font-size: 17px;
+    border-style: none;
 }
 
-.users header a:active{
-    transform: scale(0.98); 
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+.users .search button.active{
+    color: white;
+    background: rgb(61, 61, 61);
+}
+
+/*Изменение кнопки поиска после нажатия \f070 это код крестика*/
+.users .search button.active i::before{
+    content: "\f00d";
 }
 
 .users-list a .content img{
