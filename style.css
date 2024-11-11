@@ -127,6 +127,11 @@ form .name-details .field:last-child{
    cursor: pointer; 
 }
 
+/*Изменение значка видимости пароля \f070 это код перечеркнутого глаза*/
+.form form .field i.active::before{
+    color: rgb(61, 61, 61);
+    content: "\f070";
+}
 /*Стили для формы пользователей*/
 
 .users{

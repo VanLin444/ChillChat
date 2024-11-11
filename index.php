@@ -29,7 +29,7 @@
                 </div>
                 <div class="field input">
                     <label>Password</label>
-                    <input type="text" placeholder="Enter Password">
+                    <input type="password" placeholder="Enter Password">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
@@ -43,5 +43,6 @@
             <div class="link">Already signed up? <a href="#">Login now</a></div>
         </section>
     </div>
+    <script src="./js/pass-show-hide.js"></script>
 </body>
 </html>
