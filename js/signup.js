@@ -15,5 +15,7 @@ continueBtn.onclick = ()=>{
             }
         }
     }
-    xhr.send();
+    // Отправляем данные формы с помощью AJAX в PHP
+    let formDAta = new FormData(form);
+    xhr.send(formDAta);
 }
