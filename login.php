@@ -12,14 +12,14 @@
         <section class="form login">
             <header>ChillChat</header>
             <form action="#">
-                <div class="error-txt">Здесь выводится сообщение об ошибке</div>
+                <div class="error-txt"></div>
                 <div class="field input">
                     <label>Email Address</label>
-                    <input type="text" placeholder="Enter your email">
+                    <input type="text" name="email" placeholder="Enter your email">
                 </div>
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter Password">
+                    <input type="password" name="password" placeholder="Enter Password">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
@@ -30,5 +30,6 @@
         </section>
     </div>
     <script src="./js/pass-show-hide.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['unique_id'])){
+        header("location: ./login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,6 +17,7 @@
     <div class="wrapper">
         <section class="users">
             <header>
+                
                 <div class="content">
                     <img src="./img/sova.jpg" alt="avatar">
                     <div class="details">
