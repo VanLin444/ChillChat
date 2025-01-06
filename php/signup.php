@@ -27,8 +27,8 @@
                     if(in_array($img_ext, $extensions) === true){
                         $time = time();
                         $new_img_name = $time.$img_name;
-
-                        if(move_uploaded_file($tmp_name, "img/".$new_img_name)){
+                        echo $tmp_name;
+                        if(move_uploaded_file($tmp_name, "../img/" . $new_img_name)){
                             $status = "Active now";
                             $random_id = rand(time(), 10000000);
 

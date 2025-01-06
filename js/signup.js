@@ -7,7 +7,7 @@ form.onsubmit = (e) =>{
 }
 continueBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "./signup.php");
+    xhr.open("POST", "php/signup.php");
     xhr.onload = ()=>{
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){

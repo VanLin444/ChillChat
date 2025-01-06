@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  if(isset($_SESSION['unique_id'])){
+    header("location: users.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,7 +17,7 @@
     <div class="wrapper">
         <section class="form login">
             <header>ChillChat</header>
-            <form action="#">
+            <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-txt"></div>
                 <div class="field input">
                     <label>Email Address</label>
