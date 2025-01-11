@@ -5,7 +5,7 @@
     $output = "";
 
     if(mysqli_num_rows($sql) == 1){
-        $output .= "Нет пользователей, доступных для чата!";
+        $output .= "There are no users available to chat!";
     } elseif(mysqli_num_rows($sql) > 0){
         include "data.php";
     }
