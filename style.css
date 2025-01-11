@@ -139,7 +139,7 @@ form .name-details .field:last-child{
     padding: 25px 30px;
 }
 
-.users header, .users-list a{
+.users header, .user-list a{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,17 +157,17 @@ form .name-details .field:last-child{
     border-radius: 50%;
 }
 
-.users header .content, .users-list a .content{
+.users header .content, .user-list a .content{
     display: flex;
     align-items: center;
 }
 
-.users header .details, .users-list .details{
+.users header .details, .user-list .details{
     margin-left: 15px;
     color: black;
 }
 
-.users header .details span, .users-list .details span{
+.users header .details span, .user-list .details span{
     font-size: 18px;
     font-weight: 500;
 }
@@ -236,12 +236,12 @@ form .name-details .field:last-child{
     content: "\f00d";
 }
 
-.users-list a .content img{
+.user-list a .content img{
     height: 40px;
     width: 40px;
 }
 
-.users-list a{
+.user-list a{
     padding-right: 15px;
     text-decoration: none;
     padding-right: 15px;
@@ -250,26 +250,26 @@ form .name-details .field:last-child{
 }
 
 
-.users-list a .status-dot{
+.user-list a .status-dot{
     font-size: 12px;
     color: green;
 }
 
-.users-list{
+.user-list{
     max-height: 325px;
     overflow: auto;
 }
 
-.chat-box::-webkit-scrollbar,.users-list::-webkit-scrollbar{
+.chat-box::-webkit-scrollbar,.user-list::-webkit-scrollbar{
     width: 0px;
 }
 
-.users-list a .content p{
+.user-list a .content p{
     color:rgb(170, 170, 170);
 }
 
 /*Далее будем использовать этот класс в PHP, чтобы показать оффлайн статус*/
-.users-list a .status-dot.offline{
+.user-list a .status-dot.offline{
     color: lightgray;
 }
 

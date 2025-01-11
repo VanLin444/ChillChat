@@ -26,7 +26,7 @@
                 }
             ?>    
                 <div class="content">
-                    <img src="./img/<?php echo $row['img']?>" alt="avatar">
+                    <img src="img/<?php echo $row['image'] ?>" alt="avatar">
                     <div class="details">
                         <span><?php echo $row['fname'] . " " . $row['lname']?></span>
                         <p><?php echo $row['status']?></p>
@@ -39,60 +39,10 @@
                 <input type="text" placeholder="Enter name to  search...">
                 <button><i class="fas fa-search"></i></button>
             </div>
-            <div class="users-list">
-                <a href="#">
-                    <div class="content">
-                        <img src="./img/sova.jpg" alt="">
-                        <div class="details">
-                            <span>Sova Github</span>
-                            <p>TEST</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="./img/sova.jpg" alt="">
-                        <div class="details">
-                            <span>Sova Github</span>
-                            <p>TEST</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="./img/sova.jpg" alt="">
-                        <div class="details">
-                            <span>Sova Github</span>
-                            <p>TEST</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="./img/sova.jpg" alt="">
-                        <div class="details">
-                            <span>Sova Github</span>
-                            <p>TEST</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="./img/sova.jpg" alt="">
-                        <div class="details">
-                            <span>Sova Github</span>
-                            <p>TEST</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
+            <div class="user-list">
             </div>
         </section>
     </div>
-    <script src="./js/users.js"></script>
+    <script src="js/users.js"></script>
 </body>
 </html>
