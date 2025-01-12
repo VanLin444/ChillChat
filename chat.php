@@ -80,8 +80,8 @@
                 </div>
             </div>
             <form action="#" class="typing-area">
-                <input tepe="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id']?>">
-                <input tepe="text" name="incoming_id" value="<?php echo $user_id?>">
+                <input tepe="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id']; ?>" hidden>
+                <input tepe="text" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
                 <input type="text" name="message" class="input-field" placeholder="Write a message...">
                 <button><i class="fab fa-telegram-plane"></i></button>
             </form>
