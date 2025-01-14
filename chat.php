@@ -34,50 +34,7 @@
                 </div>
             </header>
             <div class="chat-box">
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="./img/sova.jpg" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="./img/sova.jpg" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="./img/sova.jpg" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="./img/sova.jpg" alt="">
-                    <div class="details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                
             </div>
             <form action="#" class="typing-area">
                 <input tepe="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id']; ?>" hidden>
