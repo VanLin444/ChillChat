@@ -14,6 +14,7 @@ sendBtn.onclick =()=>{
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){
                 inputField.value = ""; // Очищаем поле ввода сообщения после отправки сообщения
+                scrollToBottom();
             }
         }
     }
@@ -30,6 +31,9 @@ setInterval(()=>{
             if(xhr.status === 200){
                 let data = xhr.response;
                 chatBox.innerHTML = data;
+                if(!chatBox.classList.contains("active")){
+                    scrollToBottom();
+                }
             }
         }
     }
@@ -37,3 +41,18 @@ setInterval(()=>{
     let formData = new FormData(form);
     xhr.send(formData);
 },500);
+
+
+function scrollToBottom(){
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+chatBox.onmouseleave =()=>{
+    chatBox.classList.remove("active");
+}
+
+chatBox.onmouseenter =()=>{
+    chatBox.classList.add("active");
+}
+
+
