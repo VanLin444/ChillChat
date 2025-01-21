@@ -33,6 +33,9 @@
                     </div>
                 </div>
                 <a href="php/logout.php?logout_id=<?php echo $row['unique_id'] ?>" class="logout">Logout</a>
+                <script>
+                    var userId = "<?php echo $_SESSION['unique_id'] ?>";
+                </script>
             </header>
             <div class="search">
                 <span class="text">Select an user to start chat</span>
@@ -44,5 +47,6 @@
         </section>
     </div>
     <script src="js/users.js"></script>
+    <script src="js/activity.js"></script>
 </body>
 </html>

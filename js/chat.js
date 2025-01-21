@@ -54,5 +54,3 @@ chatBox.onmouseleave =()=>{
 chatBox.onmouseenter =()=>{
     chatBox.classList.add("active");
 }
-
-

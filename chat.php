@@ -42,9 +42,13 @@
                 <input type="text" name="message" class="input-field" placeholder="Write a message...">
                 <button><i class="fab fa-telegram-plane"></i></button>
             </form>
+            <script>
+                var userId = "<?php echo $_SESSION['unique_id'] ?>";
+            </script>
         </section>
     </div>
 
     <script src="js/chat.js"></script>
+    <script src="js/activity.js"></script>
 </body>
 </html>
