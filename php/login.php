@@ -3,9 +3,12 @@
 
     include_once "config.php";
 
+    // Основная цель этой функции — защитить сайт от SQL-инъекций.
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     
+    // Функция mysqli_fetch_assoc() в PHP используется для получения одной строки данных из результата 
+    // запроса к базе данных в виде ассоциативного массива. 
     if(!empty($email) && !empty($password)){
         $sql = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}' AND password = '{$password}'");
         if(mysqli_num_rows($sql) > 0){
