@@ -30,6 +30,8 @@
                         if(move_uploaded_file($tmp_name, "../img/" . $new_img_name)){
                             $status = "Active now";
                             $random_id = rand(time(), 10000000);
+                            // Хэшируем введёный пароль для безопасности
+                            $password = password_hash($password, PASSWORD_DEFAULT);
 
                             $sql2 = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, image, status)
                                                 VALUES ({$random_id}, '{$fname}', '{$lname}', '{$email}', '{$password}', '{$new_img_name}', '{$status}')");
