@@ -5,9 +5,11 @@ function checkActivity() {
         let xhr = new XMLHttpRequest();
         xhr.open("GET", "php/logout.php?logout_id=" + userId);
         xhr.send();
-     }, 300000);
+     }, 60000);
+     
 }
 document.addEventListener('keydown', checkActivity);
 document.addEventListener('mousedown', checkActivity);
 document.addEventListener('mousemove', checkActivity);
+document.addEventListener("visibilitychange", checkActivity);
 checkActivity();
